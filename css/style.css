@@ -19,18 +19,26 @@ body {
   margin: 0 auto;
   width: 1920px;
 }
-.slider {
+header {
   width: 1920px;
-  padding: 40px;
+  max-height: 1024px;
+  padding: 50px 150px;
   background-color: rgba(17, 17, 17, 0.7);
   background-image: url(../img/photo.png);
   box-sizing: border-box;
   background-repeat: no-repeat;
-}
-header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .logo-link {
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+  margin: 0 220px 0 0;
+}
+header .logo {
+  fill: #fff;
 }
 header .name {
   width: 115px;
@@ -39,6 +47,27 @@ header .name {
   font-size: 34px;
   font-weight: 400;
   margin: 10px 0 0 0;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header nav .menu-pic.menu-cart {
+  margin: 15px 0 0 30px;
+  background-image: url(../img/icon-cart.svg);
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  background-repeat: no-repeat;
+}
+header nav .menu-pic.menu-searching {
+  margin: 15px 0 0 30px;
+  background-image: url(../img/icon-search.svg);
+  width: 26px;
+  height: 24px;
+  fill: #ffffff;
+  background-repeat: no-repeat;
 }
 header .menu {
   display: flex;
@@ -60,46 +89,27 @@ header .menu-link {
 header .menu-link:hover {
   color: #c7b299;
 }
-header .menu-pic.menu-searching {
-  margin: 15px 0 0 30px;
-  background-image: url(../img/icon-search.svg);
-  width: 26px;
-  height: 24px;
-  fill: #ffffff;
-  background-repeat: no-repeat;
-}
-header .menu-cart {
-  margin: 15px 0 0 30px;
-  background-image: url(../img/icon-cart.svg);
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
-  background-repeat: no-repeat;
-}
-header .menu-cart:hover {
-  fill: #c7b299;
-}
-.slider {
+header .slider {
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.slider-headline {
+header .slider-headline {
   color: #ffffff;
   font-family: Raleway;
   font-size: 36px;
   font-weight: 500;
   margin: 285px 0 0 0;
 }
-.slider-headline-major {
+header .slider-headline-major {
   color: #ffffff;
   font-family: Raleway ExtraBold;
   font-size: 52px;
   font-weight: 400;
   margin: 15px 0 0 0;
 }
-.slider-text {
+header .slider-text {
   width: 562px;
   color: #ffffff;
   font-family: Montserrat;
@@ -109,7 +119,7 @@ header .menu-cart:hover {
   margin: 20px 0 0 0;
   text-align: center;
 }
-.slider-button {
+header .slider-button {
   color: #ffffff;
   font-family: Raleway ExtraBold;
   font-size: 14px;
@@ -125,18 +135,18 @@ header .menu-cart:hover {
   background-color: #998675;
   margin: 50px 0 0 0;
 }
-.slider-button:hover {
+header .slider-button:hover {
   background-color: #111111;
   color: #c7b299;
 }
-.slider-slides {
+header .slider-slides {
   width: 15px;
   height: 15px;
   border: 2px solid #d3c1ad;
   border-radius: 50%;
   margin: 310px 0 0 0;
 }
-.slider-slides:hover {
+header .slider-slides:hover {
   border-color: #111111;
 }
 main .navigation {
