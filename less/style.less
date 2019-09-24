@@ -25,12 +25,11 @@
 
 body {
     margin: 0 auto;
-    max-width: @width;
+    width: @width;
 }
 
 .slider {
-    max-width: @width;
-    min-width: @min-width;
+    width: @width;
     padding: @padding;
     background-color: rgba(17, 17, 17, 0.7);
     background-image: url(../img/photo.png);
@@ -188,14 +187,10 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            border-bottom: 3px solid #f1eee9;
-
-            &:hover {
-                border-color: #c7b299;
-
+            &:after {content: ""; width: 70px; border-bottom: 3px solid #f1eee9; margin: 16px 0 0 0;}
+            &:hover {&:after {border-bottom: 3px solid #c7b299; }
                 svg {
                     fill: #c7b299;
-                    ;
                 }
 
                 h3 {
@@ -236,6 +231,8 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+        padding: 50px;
 
         h3 {
             color: #555555;
