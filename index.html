@@ -25,8 +25,10 @@
                 <li class="menu-element"><a href="#" class="menu-link">Shortcodes</a></li>
                 <li class="menu-element"><a href="#" class="menu-link">Contact</a></li>
             </ul>
-            <a href="#" class="menu-pic menu-cart"></a>
-            <a href="#" class="menu-pic menu-searching"></a>
+            <button class="menu-pic menu-cart"></button>
+            <form action="#">
+                <input type="text" class="menu-pic menu-searching">
+            </form>
         </nav>
         <div class="slider">
             <h3 class="slider-headline">Unique and Modern Design</h3>
@@ -34,6 +36,8 @@
             <p class="slider-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
             <a href="#" class="slider-button">Get Started</a>
             <a href="#" class="slider-slides"></a>
+            <svg class="slider-left" xmlns="http://www.w3.org/2000/svg" width="40" height="73"><path  d="M38.026 72.98L.005 36.497 38.026.018l1.969 2.004L4.066 36.498l35.929 34.479z"/></svg>
+            <svg class="slider-right"xmlns="http://www.w3.org/2000/svg" width="40" height="73"><path d="M1.974 72.98l38.021-36.482L1.974.018.004 2.022l35.93 34.476L.004 70.977z"/></svg>
         </div>
     </header>
     <main>
@@ -80,9 +84,9 @@
         <div class="screenshots">
             <h3>Waxom is Realization of your Ideas.</h3>
             <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-            <section class="screenshots-wrapper"><img src="img/browser-left.png" alt="screenshot" class="left" width: 770>
-                <img src="img/browser-center.png" alt="screenshot" class="center" width: 770>
-                <img src="img/browser-right.png" alt="screenshot" class="right" width: 770></section>
+            <section class="screenshots-wrapper"><img src="img/browser-left.png" alt="screenshot" class="left" width="770">
+                <img src="img/browser-center.png" alt="screenshot" class="center" width="770">
+                <img src="img/browser-right.png" alt="screenshot" class="right" width="770"></section>
         </div>
         <aside class="advertisement">
             <h3 class="advertisement-header"><span>Waxom</span> Multipurpose WordPress Theme</h3>
@@ -91,55 +95,57 @@
         </aside>
         <div class="latest">
             <h3 class="latest-header">Our Latest Projects.</h3>
-            <p class="latest-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-            <ul class="latest-nav">
-                <li>All</li>
-                <li>Web Design</li>
-                <li>Mobile App</li>
-                <li>Illustration</li>
-                <li>Photography</li>
-            </ul>
+            <p class="latest-htext">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+            <div class="latest-nav">
+                <button>All</button>
+                <button>Web Design</button>
+                <button>Mobile App</button>
+                <button>Illustration</button>
+                <button>Photography</button>
+            </div>
             <div class="latestprojects">
-                <div class="latest-wrap">
-                    <div class="latest-pic latest-pic1"></div>
+                <div class="latest-wrap latest-pic latest-pic1">
                     <h3 class="latest-project-header">Claritas Etiam Processus</h3>
-                    <p class="latest-text">Photography, Nature</p>
+                    <span class="latest-text">Photography, Nature</span>
                 </div>
-                <div class="latest-wrap">
-                    <div class="latest-pic latest-pic2"></div>
+                <div class="latest-wrap latest-pic latest-pic2">
                     <h3 class="latest-project-header">Quam Nutamus Farum</h3>
-                    <p class="latest-text">Graphic Design, Mock-Up</p>
+                    <span class="latest-text">Graphic Design, Mock-Up</span>
                 </div>
-                <div class="latest-wrap">
-                    <div class="latest-pic latest-pic3"></div>
+                <div class="latest-wrap latest-pic latest-pic3">
                     <h3 class="latest-project-header">Usus Legentis Videntur</h3>
-                    <p class="latest-text">Photography, Holiday</p>
+                    <span class="latest-text">Photography, Holiday</span>
                 </div>
-                <div class="latest-wrap">
-                    <div class="latest-pic latest-pic4"></div>
+                <div class="latest-wrap latest-pic latest-pic4">
                     <h3 class="latest-project-header">Claritas Etiam Processus</h3>
-                    <p class="latest-text">Photography, Nature</p>
+                    <span class="latest-text">Photography, Nature</span>
                 </div>
-                <div class="latest-wrap">
-                    <div class="latest-pic latest-pic5"></div>
+                <div class="latest-wrap latest-pic latest-pic5">
                     <h3 class="latest-project-header">Quam Nutamus Farum</h3>
-                    <p class="latest-text">Graphic Design, Mock-Up</p>
+                    <span class="latest-text">Graphic Design, Mock-Up</span>
                 </div>
-                <div class="latest-wrap">
-                    <div class="latest-pic latest-pic6"></div>
+                <div class="latest-wrap latest-pic latest-pic6">
                     <h3 class="latest-project-header">Usus Legentis Videntur</h3>
-                    <p class="latest-text">Photography, Holiday</p>
+                    <span class="latest-text">Photography, Holiday</span>
                 </div>
             </div>
             <button class="learn">learn more</button>
         </div>
-        <div class="video">
-            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
-                <path d="M29.934 51.82a2.06 2.06 0 0 1-2.06-2.06V20.235a2.06 2.06 0 0 1 3.379-1.582l17.714 14.762a2.059 2.059 0 0 1 0 3.165L31.253 51.343a2.06 2.06 0 0 1-1.32.477zm2.06-27.187v20.73l12.437-10.366zm2.943 45.365a34.807 34.807 0 0 1-17.106-4.47 2.06 2.06 0 1 1 2.02-3.59c12.019 6.765 27.231 4.673 36.994-5.093 12.047-12.047 12.047-31.648 0-43.695-12.047-12.049-31.649-12.048-43.695 0-12.046 12.047-12.046 31.648 0 43.695a2.06 2.06 0 0 1-2.913 2.914c-13.653-13.654-13.653-35.869 0-49.523 13.654-13.652 35.867-13.653 49.522 0 13.653 13.654 13.653 35.869 0 49.523C53.033 66.484 44.026 70 34.937 70z" /></svg>
-            <h3 class="video-headline">Waxom Video Presentation</h3>
-            <p class="video-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
-            <span class="video-time">03:26</span>
-        </div>
+        <section class="video-section">
+            <video src="video/Mountains%20-%207418.mp4" poster="img/2-layers.png" width="1922" height="706";></video>
+            <div class="video"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
+                    <path d="M29.934 51.82a2.06 2.06 0 0 1-2.06-2.06V20.235a2.06 2.06 0 0 1 3.379-1.582l17.714 14.762a2.059 2.059 0 0 1 0 3.165L31.253 51.343a2.06 2.06 0 0 1-1.32.477zm2.06-27.187v20.73l12.437-10.366zm2.943 45.365a34.807 34.807 0 0 1-17.106-4.47 2.06 2.06 0 1 1 2.02-3.59c12.019 6.765 27.231 4.673 36.994-5.093 12.047-12.047 12.047-31.648 0-43.695-12.047-12.049-31.649-12.048-43.695 0-12.046 12.047-12.046 31.648 0 43.695a2.06 2.06 0 0 1-2.913 2.914c-13.653-13.654-13.653-35.869 0-49.523 13.654-13.652 35.867-13.653 49.522 0 13.653 13.654 13.653 35.869 0 49.523C53.033 66.484 44.026 70 34.937 70z" /></svg>
+                <h3 class="video-headline">Waxom Video Presentation</h3>
+                <p class="video-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+                <span class="video-time">03:26</span>
+            </div>
+        </section>
+        <aside class="ad2">
+            <a href="#" class="ad2ad ad2-ad1"></a>
+            <a href="#" class="ad2ad ad2-ad2"></a>
+            <a href="#" class="ad2ad ad2-ad3"></a>
+            <a href="#" class="ad2ad ad2-ad4"></a>
+        </aside>
     </main>
     <footer>
         <span>Copyright &copy; 2015 <a href="#">Waxom</a> Privacy Policy <a href="#">FAQ</a> Support</span> <span>Designed by <a href="#">ThemeFire</a> Only on <a href="#">Envato Market</a></span></footer>
