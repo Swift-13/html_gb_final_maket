@@ -461,24 +461,6 @@ main .screenshots .screenshots-wrapper .right {
   text-align: left;
   margin: 15px 0 0 0;
 }
-.latest .latest-pic1 {
-  background-image: url(../img/photo%206.png);
-}
-.latest .latest-pic2 {
-  background-image: url(../img/photo%201.png);
-}
-.latest .latest-pic3 {
-  background-image: url(../img/photo%202.png);
-}
-.latest .latest-pic4 {
-  background-image: url(../img/photo%203.png);
-}
-.latest .latest-pic5 {
-  background-image: url(../img/photo%204.png);
-}
-.latest .latest-pic6 {
-  background-image: url(../img/photo%205.png);
-}
 .latest .latest-project-header {
   color: #c7b299;
   font-family: Raleway;
@@ -488,14 +470,14 @@ main .screenshots .screenshots-wrapper .right {
   padding: 0 0 0 30px;
   box-sizing: border-box;
   position: relative;
-  margin: 255px 0 0 0;
+  margin: 15px 0 0 0;
 }
 .latest .latest-project-header:before {
   content: "";
   border: 20px solid transparent;
   border-bottom: 20px solid #fbfaf8;
   position: absolute;
-  top: -59px;
+  top: -57px;
   left: ;
 }
 .latest .learn {
@@ -522,6 +504,8 @@ main .screenshots .screenshots-wrapper .right {
 }
 .video-section {
   position: relative;
+  height: 705px;
+  width: 100%;
 }
 .video {
   position: absolute;
