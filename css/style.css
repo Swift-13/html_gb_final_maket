@@ -37,20 +37,26 @@ header {
   box-sizing: border-box;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 header .logo-link {
   text-decoration: none;
   display: flex;
   align-content: center;
-  margin: 0 220px 0 0;
+  margin: 0 55px 0 55px;
 }
 header .logo-link:hover .logo {
   fill: #c7b299;
 }
+header .logo-link:hover .name {
+  color: #c7b299;
+}
 header .logo-link:active .logo {
   fill: #000;
+}
+header .logo-link:active .name {
+  color: #000;
 }
 header .logo {
   fill: #fff;
@@ -68,6 +74,9 @@ header nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 55px 0 55px;
+  max-width: 845px;
+  min-height: 100px;
 }
 header nav .menu-pic.menu-cart {
   margin: 15px 0 0 30px;
@@ -86,17 +95,17 @@ header nav .menu-pic.menu-cart:hover {
 header nav .menu-pic.menu-cart:active {
   background-image: url(../img/icon-cart3.svg);
 }
-header nav .menu-pic.menu-searching {
+header nav .menu-pic2 .menu-searching {
   margin: 15px 0 0 30px;
   background-image: url(../img/icon-search.svg);
   width: 26px;
   height: 24px;
   background-repeat: no-repeat;
   background-color: #373a3e;
-  bagground: contain;
+  background: contain;
   border: none;
 }
-header nav .menu-pic.menu-searching:focus {
+header nav .menu-pic2 .menu-searching:focus {
   width: 300px;
   outline: none;
   background-position: right;
