@@ -50,7 +50,7 @@ body {
     width: @width;
 
     header {
-        width: @width;
+        width: 100%;
         max-height: 1024px;
         padding: 50px 150px;
         background-color: rgba(17, 17, 17, 0.7);
@@ -309,7 +309,7 @@ body {
                     content: "";
                     width: 70px;
                     border-bottom: 3px solid #f1eee9;
-                    margin: 30px 0 0 0;
+                    margin: 30px 0 30px 0;
                 }
 
                 &:hover {
@@ -356,6 +356,7 @@ body {
         }
 
         .screenshots {
+            width: 100%;
             background-color: #fbfaf8;
             display: flex;
             flex-direction: column;
@@ -372,7 +373,7 @@ body {
             }
 
             p {
-                width: 757px;
+                max-width: 757px;
                 color: #8c8c8c;
                 font-family: Montserrat;
                 font-size: 16px;
@@ -455,6 +456,7 @@ body {
         }
 
         .latest {
+            width: 100%;
             padding: 80px 375px;
             display: flex;
             flex-direction: column;
@@ -469,7 +471,7 @@ body {
             }
 
             .latest-htext {
-                width: 757px;
+                max-width: 757px;
                 color: #8c8c8c;
                 font-family: Montserrat;
                 font-size: 16px;
@@ -482,6 +484,7 @@ body {
             .latest-nav {
                 display: flex;
                 list-style: none;
+                flex-wrap: wrap;
             }
 
             button {
@@ -495,7 +498,7 @@ body {
                 border: 1px solid #ebebeb;
                 background-color: #fff;
                 text-align: center;
-                margin: 0 5px 0 5px;
+                margin: 5px 5px 5px 5px;
 
                 &:hover {
                     background-color: #998675;
@@ -809,7 +812,7 @@ body {
             }
 
             p {
-                width: 757px;
+                max-width: 757px;
                 color: #8c8c8c;
                 font-family: Montserrat;
                 font-size: 16px;
@@ -1024,17 +1027,21 @@ body {
                         text-decoration: none;
                         margin: 0 0 30px 0;
 
-                        &:hover { span {
-                            color: #c7b299;
+                        &:hover {
+                            span {
+                                color: #c7b299;
                             }
+
                             svg {
                                 fill: #c7b299;
                             }
                         }
+
                         &:active {
                             span {
-                            color: #000;
+                                color: #000;
                             }
+
                             svg {
                                 fill: #000;
                             }
@@ -1050,7 +1057,7 @@ body {
                             font-family: Raleway;
                             font-size: 34px;
                             font-weight: 400;
-                            
+
                         }
                     }
 
@@ -1076,12 +1083,14 @@ body {
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 20px;
+
                     &:hover {
-                                color: #c7b299;
-                            }
-                            &:active {
-                                color: #000;
-                            }
+                        color: #c7b299;
+                    }
+
+                    &:active {
+                        color: #000;
+                    }
                 }
             }
 
@@ -1189,11 +1198,19 @@ body {
             }
 
             .contacts-wrap {
-                &.dribble-widget {width: 270px; display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0 0 80px 0;}
+                &.dribble-widget {
+                    width: 270px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 0 0 80px 0;
+                }
 
                 h3 {}
 
-                img {margin: 0 0 10px 0;}
+                img {
+                    margin: 0 0 10px 0;
+                }
             }
         }
     }
@@ -1228,4 +1245,98 @@ body {
             &:hover {}
         }
     }
+    label,
+#menu {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu {
+  visibility: visible;
+}
+}
+
+@media screen and (max-width: 480px) {
+
+    body,
+    main, body footer {
+        width: 100%;
+    }
+
+    header,
+    body main .latest {
+        padding: 30px;
+    }
+
+    body main .advertisement,
+    body main .screenshots .screenshots-wrapper,
+    body header .name,
+    body header .slider,
+    body main .ad2,
+    body main .exellent,
+    body main .ad3 {
+        display: none;
+    }
+
+    .navigation, body main .recent-posts .recent-all, body main .contacts {
+        flex-wrap: wrap;
+    }
+
+    body main .screenshots, body footer, body main .latest, body main .recent-posts {
+        padding: 30px 20px;
+        max-width: 480px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    body main .video-section .video {top: 90px; left: 200px;}
+    body main .video-section,
+    video {
+        max-width: 480px;
+        box-sizing: border-box;
+        height: auto; 
+        .video {
+            svg {padding: 0 0 30px 0;
+            }
+            path {
+            }
+            .video-headline {display: none;
+            }
+            .video-text {display: none;
+                
+            }
+            .video-time {
+            }
+        }
+    }
+    body main .latest .latestprojects, body main .latest .latest-nav {justify-content: center;}
+    body label {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image:  url('https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/menu-128.png');
+    background-size: 100%;
+    background-repeat: ;
+    background-position: 0 0;
+        position: absolute; top: 15px; left:15px;
+  }
+  
+  .menu, .menu-pic, .menu-pic2  {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+      position: fixed; top: 30px; left: -23px;
+  }
+  body header .menu-element {
+    text-align: center;
+    margin: 2px 15px;
+      display: flex; align-items: center;
+      padding: 0px 30px;
+      
+      a {padding: 0px 20px;
+          
+      }
+      
+  }
+    
+
 }
