@@ -15,6 +15,11 @@
 }
 
 @font-face {
+    font-family: Montserrat UltraLight;
+    src: url(../fonts/Montserrat-UltraLight.otf);
+}
+
+@font-face {
     font-family: Raleway;
     src: url(../fonts/Raleway.ttf);
 }
@@ -27,6 +32,11 @@
 @font-face {
     font-family: Raleway ExtraBold;
     src: url(../fonts/raleway_extra_bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto.ttf);
 }
 
 * {
@@ -95,7 +105,7 @@ body {
             flex-wrap: wrap;
             justify-content: space-between;
             margin: 0 55px 0 55px;
-            max-width: 845px;
+            max-width: 831px;
             min-height: 100px;
 
             .menu-pic {
@@ -130,7 +140,6 @@ body {
                     height: 24px;
                     background-repeat: no-repeat;
                     background-color: #373a3e;
-                    background: contain;
                     border: none;
 
                     &:focus {
@@ -139,6 +148,7 @@ body {
                         background-position: right;
                         color: #c7b299;
                     }
+
 
                 }
             }
@@ -272,7 +282,7 @@ body {
             border-radius: 50%;
             margin: 210px 0 0 0;
 
-            &:hover: {
+            &:hover {
                 border-color: #d3c1ad;
             }
 
@@ -631,6 +641,10 @@ body {
                     fill: #c7b299;
                 }
 
+                &:active svg {
+                    fill: #000000;
+                }
+
                 svg {
                     fill: #fff;
                     padding: 0 0 60px 0;
@@ -663,6 +677,118 @@ body {
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 24px;
+                }
+            }
+        }
+
+        .exellent {
+            width: 100%;
+            background-color: #fbfaf8;
+            padding: 80px 0 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .exell_pic {
+                margin: 0 30px 0 0;
+            }
+
+            .exell_header {
+                color: #555555;
+                font-family: Raleway SemiBold;
+                font-size: 30px;
+                font-weight: 400;
+                margin: 0 0 40px 0;
+            }
+
+            .exell-text {
+                width: 657px;
+                color: #8c8c8c;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 28px;
+                margin: 0 0 45px 0;
+            }
+
+            .exell-list {
+                text-decoration: none;
+                margin: 0 0 0 100px;
+                list-style: none;
+            }
+
+            li {
+                color: #8c8c8c;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 32px;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 21px;
+                    height: 21px;
+                    background-image: url(../img/01.svg);
+                    position: absolute;
+                    top: 5px;
+                    left: -40px;
+                }
+            }
+        }
+
+        .ad3 {
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+            padding: 70px 0;
+
+            .ad3-wrap {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 80px 0 0;
+
+                svg {
+                    width: 55px;
+                    height: 44px;
+                    fill: #c7b299;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 0 30px 0;
+
+                }
+
+
+                .ad3_num {
+                    color: #ffffff;
+                    font-family: Montserrat UltraLight;
+                    font-size: 48px;
+                    font-weight: 400;
+                    line-height: 36px;
+                    margin: 0 0 20px 0;
+                }
+
+                .ad3_txt {
+                    color: #c7b299;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    margin: 0 20px 0 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        border-bottom: 2px solid #ffffff;
+                    }
                 }
             }
         }
@@ -703,9 +829,69 @@ body {
                     border: 1px solid #f8f8f8;
                     display: flex;
                     flex-direction: column;
+                    position: relative;
+
+                    &:hover {
+                        background-color: #362f2d;
+
+                        h3 {
+                            color: #c7b299;
+                        }
+
+                        p {
+                            color: #ffffff;
+                        }
+
+                        .recent-date {
+                            color: #ffffff;
+                            background-color: #c7b299;
+
+                        }
+
+                        .recent-month {
+                            color: #ffffff;
+                            background-color: #a48d72;
+
+                        }
+                    }
+
+                    .recent-date {
+                        color: #ffffff;
+                        font-family: Montserrat;
+                        font-size: 24px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        display: block;
+                        position: absolute;
+                        top: 20px;
+                        left: 15px;
+                        width: 50px;
+                        padding: 9px 0 9px 0;
+                        border-radius: 3px 3px 0 0;
+                        background-color: #363636;
+                        text-align: center;
+                    }
+
+                    .recent-month {
+                        color: #ffffff;
+                        font-family: Roboto;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        display: block;
+                        position: absolute;
+                        padding: 7px 0;
+                        top: 57px;
+                        left: 15px;
+                        width: 50px;
+                        border-radius: 0 0 3px 3px;
+                        background-color: #252525;
+                        text-align: center;
+                    }
 
                     img {
                         margin: 0 0 30px 0;
+
                     }
 
                     h3 {
@@ -724,6 +910,7 @@ body {
                         font-weight: 300;
                         line-height: 22px;
                         margin: 0 0 27px 29px;
+                        text-align: left;
                     }
 
                     a {
@@ -733,8 +920,19 @@ body {
                         font-weight: 300;
                         line-height: 20px;
                         margin: 0 0 33px 30px;
+                        text-decoration: none;
+                        position: relative;
 
-                        &:hover {}
+                        &:hover:after {
+                            content: "";
+                            display: block;
+                            background-image: url(../img/arrow_recent.svg);
+                            width: 17px;
+                            height: 8px;
+                            position: absolute;
+                            top: 7px;
+                            left: 90px;
+                        }
                     }
                 }
             }
@@ -744,10 +942,16 @@ body {
                 height: 22px;
                 background-color: #ffffff;
                 flex-flow: row;
+                border: none;
+
+                &:hover svg {
+                    fill: #c7b299;
+                }
 
                 svg {
                     width: 22px;
                     height: 22px;
+                    fill: #d1d1d1;
                 }
             }
         }
@@ -799,6 +1003,197 @@ body {
                 margin: 22px 45px;
 
                 &:hover {}
+            }
+        }
+
+        .contacts {
+            background-color: #191919;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 80px 0;
+
+            .contacts-wrap {
+                margin: 0 50px 0 0;
+
+                &.contacts-info {
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        margin: 0 0 30px 0;
+
+                        &:hover { span {
+                            color: #c7b299;
+                            }
+                            svg {
+                                fill: #c7b299;
+                            }
+                        }
+                        &:active {
+                            span {
+                            color: #000;
+                            }
+                            svg {
+                                fill: #000;
+                            }
+                        }
+
+                        svg {
+                            fill: #ffffff;
+                            animation: preloader 5s infinite linear;
+                        }
+
+                        span {
+                            color: #ffffff;
+                            font-family: Raleway;
+                            font-size: 34px;
+                            font-weight: 400;
+                            
+                        }
+                    }
+
+                    img {}
+
+                    p {
+                        width: 258px;
+                        color: #555555;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        word-wrap: break-word;
+                        margin: 0 0 33px 0;
+                    }
+                }
+
+
+
+                span {
+                    color: #d1d1d1;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    &:hover {
+                                color: #c7b299;
+                            }
+                            &:active {
+                                color: #000;
+                            }
+                }
+            }
+
+            .contacts-wrap {
+                &.contacts-recent {}
+
+                h3 {
+                    color: #ffffff;
+                    font-family: Raleway;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 25px 0 33px 0;
+                }
+
+                p {}
+            }
+
+            .cont-rec-wrap {
+                &:hover {
+                    h3 {
+                        color: #ffffff;
+                    }
+
+                    p {
+                        color: #c7b299;
+                    }
+                }
+
+                h3 {
+                    color: #363636;
+                    font-family: Montserrat;
+                    font-size: 12px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    margin: 0 0 10px 0;
+                }
+
+                p {
+                    width: 262px;
+                    color: #555555;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 20px;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        height: 21px;
+                        border-bottom: 1px solid #252525;
+                        margin: 0 0 20px 0;
+                    }
+
+                }
+            }
+
+            .contacts-wrap {
+                &.twitter {}
+
+                h3 {}
+
+                p {}
+
+                a {
+                    color: #00bff3;
+                    text-decoration: none;
+
+                    &:hover {}
+                }
+
+                span {}
+            }
+
+            .twit {
+                p {
+                    width: 264px;
+                    color: #555555;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    margin: 0 0 11px 0;
+                }
+
+                a {
+                    &:hover {}
+                }
+
+                span {
+                    color: #363636;
+                    font-family: Montserrat;
+                    font-size: 12px;
+                    font-weight: 300;
+                    line-height: 20px;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        height: 21px;
+                        border-bottom: 1px solid #252525;
+                        margin: 0 0 20px 0;
+
+                    }
+                }
+            }
+
+            .contacts-wrap {
+                &.dribble-widget {width: 270px; display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0 0 80px 0;}
+
+                h3 {}
+
+                img {margin: 0 0 10px 0;}
             }
         }
     }

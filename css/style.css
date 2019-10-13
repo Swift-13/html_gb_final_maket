@@ -9,6 +9,10 @@
   src: url(../fonts/Montserrat.ttf);
 }
 @font-face {
+  font-family: Montserrat UltraLight;
+  src: url(../fonts/Montserrat-UltraLight.otf);
+}
+@font-face {
   font-family: Raleway;
   src: url(../fonts/Raleway.ttf);
 }
@@ -605,6 +609,53 @@ body main .exellent li:before {
   top: 5px;
   left: -40px;
 }
+body main .ad3 {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  padding: 70px 0;
+}
+body main .ad3 .ad3-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 80px 0 0;
+}
+body main .ad3 .ad3-wrap svg {
+  width: 55px;
+  height: 44px;
+  fill: #c7b299;
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px 0;
+}
+body main .ad3 .ad3-wrap .ad3_num {
+  color: #ffffff;
+  font-family: Montserrat UltraLight;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0 0 20px 0;
+}
+body main .ad3 .ad3-wrap .ad3_txt {
+  color: #c7b299;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .ad3 .ad3-wrap .ad3_txt:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid #ffffff;
+}
 body main .recent-posts {
   margin: 82px 0 80px 0;
   display: flex;
@@ -727,7 +778,7 @@ body main .recent-posts .recent-all .recent-wrap a:hover:after {
   width: 17px;
   height: 8px;
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: 90px;
 }
 body main .recent-posts .skip {
@@ -780,6 +831,141 @@ body main .ad2 .ad2-ad4 {
   height: 164px;
   background-image: url(../img/logo-04.png);
   margin: 22px 45px;
+}
+body main .contacts {
+  background-color: #191919;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+body main .contacts .contacts-wrap {
+  margin: 0 50px 0 0;
+}
+body main .contacts .contacts-wrap.contacts-info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 0 30px 0;
+}
+body main .contacts .contacts-wrap.contacts-info a:hover span {
+  color: #c7b299;
+}
+body main .contacts .contacts-wrap.contacts-info a:hover svg {
+  fill: #c7b299;
+}
+body main .contacts .contacts-wrap.contacts-info a:active span {
+  color: #000;
+}
+body main .contacts .contacts-wrap.contacts-info a:active svg {
+  fill: #000;
+}
+body main .contacts .contacts-wrap.contacts-info a svg {
+  fill: #ffffff;
+  animation: preloader 5s infinite linear;
+}
+body main .contacts .contacts-wrap.contacts-info a span {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 34px;
+  font-weight: 400;
+}
+body main .contacts .contacts-wrap.contacts-info p {
+  width: 258px;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  word-wrap: break-word;
+  margin: 0 0 33px 0;
+}
+body main .contacts .contacts-wrap span {
+  color: #d1d1d1;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+body main .contacts .contacts-wrap span:hover {
+  color: #c7b299;
+}
+body main .contacts .contacts-wrap span:active {
+  color: #000;
+}
+body main .contacts .contacts-wrap h3 {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 25px 0 33px 0;
+}
+body main .contacts .cont-rec-wrap:hover h3 {
+  color: #ffffff;
+}
+body main .contacts .cont-rec-wrap:hover p {
+  color: #c7b299;
+}
+body main .contacts .cont-rec-wrap h3 {
+  color: #363636;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+body main .contacts .cont-rec-wrap p {
+  width: 262px;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+body main .contacts .cont-rec-wrap p:after {
+  content: "";
+  display: block;
+  height: 21px;
+  border-bottom: 1px solid #252525;
+  margin: 0 0 20px 0;
+}
+body main .contacts .contacts-wrap a {
+  color: #00bff3;
+  text-decoration: none;
+}
+body main .contacts .twit p {
+  width: 264px;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0 0 11px 0;
+}
+body main .contacts .twit span {
+  color: #363636;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+body main .contacts .twit span:after {
+  content: "";
+  display: block;
+  height: 21px;
+  border-bottom: 1px solid #252525;
+  margin: 0 0 20px 0;
+}
+body main .contacts .contacts-wrap.dribble-widget {
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 80px 0;
+}
+body main .contacts .contacts-wrap img {
+  margin: 0 0 10px 0;
 }
 body footer {
   padding: 45px 375px;
